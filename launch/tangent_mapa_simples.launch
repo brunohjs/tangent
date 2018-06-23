@@ -1,0 +1,3 @@
+<launch>
+	<node name="stageros" pkg="stage_ros" type="stageros" args="$(find tangent)/world/create_hokuyo.world"/>
+</launch>
