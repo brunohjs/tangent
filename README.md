@@ -8,6 +8,7 @@ Executando:
     - Abra um terceiro terminal e execute o script:
         rosrun tangent tangent.py
         *Obs: se o ROS não reconhecer o script, vá até a pasta onde está o script e execute:
+        
             chmod +x tangent.py
             cd ~/catkin_ms
             catkin_make
@@ -15,6 +16,7 @@ Executando:
 Informações sobre o log do terminal:
 
 siglas:
+
     AG (Goal Angle)             Ângulo entre o vetor do robô e o vetor
                                 da distância entre o robô e o ponto destino;
     
@@ -24,7 +26,8 @@ siglas:
                                 respectivamente [esquerdo(-22.5 graus), centro(0 graus), direito(+25,5 graus)].
 
 Opcodes:
-Os opcodes informam o quê o robô está identificando. Para cada identificação há uma ação,
+Os opcodes informam o quê o robô está identificando. Para cada identificação há uma ação:
+
     [ none ] - Nada a fazer;
     [ frnt ] - Colisão frontal. Consequência: o robô vai virar para qualquer lado e, em seguida, vai dar ré;
     [cofntl] - Colisão esquerda-frontal. Consequência: o robô vai virar para a direita;
